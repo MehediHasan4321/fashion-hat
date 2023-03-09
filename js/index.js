@@ -98,3 +98,7 @@ document.getElementById("search-inp").addEventListener("keyup",function(e){
     
 })
 
+document.addEventListener("scroll",()=>{
+    const navBar = document.getElementById("nav-bar")
+    navBar.style.position = 'fixed'
+})
