@@ -35,11 +35,15 @@ function displayData(products){
         `
     }
 }
-
+let count = 0
 function productPrice(id){
     fetch(`https://fakestoreapi.com/products/${id}`)
     .then(res=>res.json())
-    .then(data=>calculatePrice(data))
+    .then(data=>{
+        calculatePrice(data)
+        count ++
+        setInnerTextByIdAndValue('card-number',count)
+    })
 }
 
 function getInnerTextById(id){
