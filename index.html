@@ -33,35 +33,37 @@
             <div>
                 <div class="flex justify-between text-center px-5 py-3 text-2xl">
                     <h3>Total Price :</h3>
-                    <h3>00</h3>
+                    <h3>$<span id="price">00</span></h3>
                 </div>
                 <div class="flex justify-between text-center px-5 py-3 text-2xl">
                     <h3>Shiping Cost :</h3>
-                    <h3>00</h3>
+                    <h3>$<span id="shiping-cost">20</span></h3>
                 </div>
                 <div class="flex justify-between text-center px-5 py-3 text-2xl">
                     <h3>Total Vat 15% :</h3>
-                    <h3>00</h3>
+                    <h3>$<span id="total-vat">00</span></h3>
                 </div>
                 <div class="flex justify-between text-center px-5 py-3 text-2xl ">
                     <h3>Payable Total :</h3>
-                    <h3>00</h3>
+                    <h3>$<span id="total-payable-price">00</span></h3>
                 </div>
                 <hr class="bottom-1">
             </div>
         </div>
     </header>
-    <main class="container mx-auto my-[80px]">
-        <section class="grid grid-cols-4 gap-3">
-            <div class="col-span-1 h-2 bg-red-400 ">
+    <main class="container mx-auto my-[80px] relative">
+        <section class="flex gap-3"> 
+            <div class="w-[20%] h-screen bg-gray-200 custom-class static">
 
             </div>
-            <div class="col-span-3 bg-gray-200 h-1">
-                
+            <div class="w-[80%] h-screen overflow-y-scroll">
+                <div class="flex justify-around text-center flex-wrap gap-3" id="product-cart-container">
+                    
+                </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="w-full h-[20vh] bg-black">
 
     </footer>
     <script src="./js/index.js"></script>

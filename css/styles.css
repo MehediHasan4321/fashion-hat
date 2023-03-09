@@ -1,7 +1,8 @@
 .custom-slider{
     width: 0px;
     min-height: 60vh;
-    position: absolute;
+    position: fixed;
+    opacity: .9;
     top: 80px;
     right: 0px;
     transition: .5s;
