@@ -1,8 +1,15 @@
 .custom-slider{
     width: 0px;
-    min-height: 70vh;
+    min-height: 60vh;
     position: absolute;
     top: 80px;
     right: 0px;
     transition: .5s;
+    overflow: hidden;
+}
+.custom-banner{
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('/images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }

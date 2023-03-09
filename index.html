@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +10,61 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header>
         <div class="h-[80px] w-full bg-gray-200 fixed z-10">
             <div class="container mx-auto h-full w-full flex justify-between items-center">
                 <h1 class="text-4xl font-semibold">Fashion<span class="text-red-500">Hat</span></h1>
                 <div class="flex justify-between items-center gap-5">
-                    <input class="px-3 py-2 w-[300px] outline-none rounded-lg placeholder:text-center text-lg" type="text" id="search-inp" placeholder="Search Your Product">
-                    <i id="shoping-icon" class="fa-solid fa-bag-shopping text-4xl text-green-700"></i>  
-                </div>   
+                    <input class="px-3 py-2 w-[300px] outline-none rounded-lg placeholder:text-center text-lg"
+                        type="text" id="search-inp" placeholder="Search Your Product">
+                    <i id="shoping-icon" class="fa-solid fa-bag-shopping text-4xl text-green-700"></i>
+                </div>
             </div>
         </div>
-        <div class="custom-slider bg-gray-200" id="custom-slider">
-            
+        <div class="container mx-auto h-[40vh] custom-banner">
+
+        </div>
+        <div class="custom-slider bg-gray-200 z-10" id="custom-slider">
+            <h1 class="text-3xl bg-green-700 px-4 py-1 text-white w-full text-center">Your Order List</h1>
+            <button class="bg-green-700 px-4 py-2 text-center text-white w-full bottom-0 absolute text-3xl">Check Out <i
+                    class="fa-solid fa-cart-plus"></i></button>
+            <div>
+                <div class="flex justify-between text-center px-5 py-3 text-2xl">
+                    <h3>Total Price :</h3>
+                    <h3>00</h3>
+                </div>
+                <div class="flex justify-between text-center px-5 py-3 text-2xl">
+                    <h3>Shiping Cost :</h3>
+                    <h3>00</h3>
+                </div>
+                <div class="flex justify-between text-center px-5 py-3 text-2xl">
+                    <h3>Total Vat 15% :</h3>
+                    <h3>00</h3>
+                </div>
+                <div class="flex justify-between text-center px-5 py-3 text-2xl ">
+                    <h3>Payable Total :</h3>
+                    <h3>00</h3>
+                </div>
+                <hr class="bottom-1">
+            </div>
         </div>
     </header>
-    <main>
+    <main class="container mx-auto my-[80px]">
+        <section class="grid grid-cols-4 gap-3">
+            <div class="col-span-1 h-2 bg-red-400 ">
 
+            </div>
+            <div class="col-span-3 bg-gray-200 h-1">
+                
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
     <script src="./js/index.js"></script>
 </body>
+
 </html>
