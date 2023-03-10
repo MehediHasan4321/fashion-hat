@@ -39,9 +39,13 @@ function displayData(products) {
             <img class="w-full h-[200px]" src="${image}" alt="">
             <h1 class="text-xl mt-2">${title}</h1>
             <h3 class="text-2xl absolute left-4 bottom-16">Product Price : $<span>${price}</span></h3>
-            <button onclick="productPrice(${id})"
-            class="bg-green-700 text-white text-2xl text-center px-5 py-2 absolute bottom-0  left-0 w-full">Add
-            To Cart</button>
+            <div class=" flex justify-center items-center gap-5 absolute bottom-2  left-0 right-2 w-full">
+                <button onclick="productPrice(${id})"
+                class="bg-green-700 text-white text-xl text-center px-2 py-1 rounded w-[45%]">Add
+                To Cart</button>
+                <button onclick="productPrice(${id})"
+                class="bg-green-700 text-white text-xl text-center px-2 py-1 rounded w-[45%]">Details</button>
+            </div>
         </div>
         `
     }
@@ -92,7 +96,7 @@ document.getElementById("search-inp").addEventListener("keyup",function(e){
         return product.title.toLowerCase().includes(value)
     })
     
-    if(e.keyCode ===13){
+    if(e.key ==='Enter'){
         displayData(newArray)
     }
     

@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/80133de64f.js" crossorigin="anonymous"></script>
-    <title>Fashion-hat</title>
+    <title>Fashion-hat-details</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body id="scroll">
-    <header>
+<body>
+    <header class="mb-20">
         <div class="h-[80px] w-full bg-gray-200  z-10 shadow-md" id="nav-bar">
             <div class="container mx-auto h-full w-full flex justify-between items-center">
                 <h1 class="text-4xl font-semibold">Fashion<span class="text-red-500">Hat</span></h1>
@@ -27,8 +27,10 @@
                 </div>
             </div>
         </div>
-        <div class="container mx-auto h-[40vh] custom-banner">
-
+        <div class="container mx-auto h-[40vh] flex justify-center items-center bg-gray-200">
+            <div>
+                <h1 class="text-4xl text-black">Single Product Details</h1>
+            </div>
         </div>
         <div class="custom-slider bg-gray-200 z-10" id="custom-slider">
             <h1 class="text-3xl bg-green-700 px-4 py-1 text-white w-full text-center">Your Order List</h1>
@@ -55,14 +57,14 @@
             </div>
         </div>
     </header>
-    <main class="container mx-auto my-[80px] relative">
-        <section class="grid grid-cols-4 gap-3"> 
-            <div class="col-span-1 h-screen bg-gray-200 custom-class static">
+    <main class="container mx-auto min-h-[80vh]">
+        <section>
+            <div class="flex  gap-5">
+                <div class=" bg-gray-200 w-[30%] h-[400px]" id="single-img-container">
 
-            </div>
-            <div class="col-span-3 ">
-                <div class=" flex justify-around text-center flex-wrap gap-3" id="product-cart-container">
-                    
+                </div>
+                <div class="bg-amber-100 w-[70%] min-h-[400px]">
+
                 </div>
             </div>
         </section>
@@ -71,6 +73,7 @@
 
     </footer>
     <script src="./js/index.js"></script>
+    <script src="./js/product-details.js"></script>
 </body>
 
 </html>
