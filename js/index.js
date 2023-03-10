@@ -25,12 +25,12 @@ function productPrice(id) {
         setInnerTextByIdAndValue('card-number', count)
     })
 }
-console.log(arr)
 
 function displayData(products) {
 
     const productContainer = document.getElementById('product-cart-container')
-    productContainer.innerHTML = ''
+    try{
+        productContainer.innerHTML = ''
     for (const product of products) {
 
         const { image, title, price, id } = product
@@ -43,24 +43,16 @@ function displayData(products) {
                 <button onclick="productPrice(${id})"
                 class="bg-green-700 text-white text-xl text-center px-2 py-1 rounded w-[45%]">Add
                 To Cart</button>
-                <button onclick="productPrice(${id})"
+                <button onclick="productDetailsPage(${id})"
                 class="bg-green-700 text-white text-xl text-center px-2 py-1 rounded w-[45%]">Details</button>
             </div>
         </div>
         `
     }
-}
-
-
-function getInnerTextById(id) {
-    const elementString = document.getElementById(id).innerText;
-    const stringToNumber = parseInt(elementString);
-    return stringToNumber
-}
-
-function setInnerTextByIdAndValue(id, value) {
-    const element = document.getElementById(id);
-    element.innerText = value
+    }
+    catch{
+        console.log('thtere')
+    }
 }
 
 function calculatePrice(product) {
@@ -90,6 +82,12 @@ document.getElementById('shoping-icon').addEventListener('click', () => {
 
 })
 
+function productDetailsPage(){
+   window.location.href = 'product-checkout.html'
+   
+}
+
+
 document.getElementById("search-inp").addEventListener("keyup",function(e){
     const value = this.value.toLowerCase();
     const newArray = arr[0].filter(product=>{
@@ -106,3 +104,6 @@ document.addEventListener("scroll",()=>{
     const navBar = document.getElementById("nav-bar")
     navBar.style.position = 'fixed'
 })
+
+
+
