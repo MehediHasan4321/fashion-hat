@@ -16,6 +16,10 @@
         <div class="h-[80px] w-full bg-gray-200  z-10 shadow-md" id="nav-bar">
             <div class="container mx-auto h-full w-full flex justify-between items-center">
                 <h1 class="text-4xl font-semibold">Fashion<span class="text-red-500">Hat</span></h1>
+                <div class="flex gap-4 text-lg font-semibold ">
+                    <a href="index.html"> Home</a>
+                    <a href="#">Checkout</a>
+                </div>
                 <div class="flex justify-between items-center gap-5">
                     <input class="px-3 py-2 w-[300px] outline-none rounded-lg placeholder:text-center text-lg"
                         type="text" id="search-inp" placeholder="Search Your Product">
@@ -60,8 +64,8 @@
     <main class="container mx-auto min-h-[80vh]">
         <section>
             <div class="flex  gap-5">
-                <div class=" bg-gray-200 w-[30%] h-[400px]" id="single-img-container">
-
+                <div class="p-1 w-[30%] h-[400px] border-2" id="single-img-container">
+                    <img class="w-full h-full" src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" alt="">
                 </div>
                 <div class="bg-amber-100 w-[70%] min-h-[400px]">
 
@@ -73,9 +77,10 @@
     <footer class="w-full h-[20vh] bg-black">
 
     </footer>
+
+    <script src="./js/fetch.js"></script>
     <script src="./js/common.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/product-details.js"></script>
+   <!-- <script src="./js/index.js"></script> -->
 </body>
 
 </html>

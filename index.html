@@ -15,7 +15,11 @@
     <header>
         <div class="h-[80px] w-full bg-gray-200  z-10 shadow-md" id="nav-bar">
             <div class="container mx-auto h-full w-full flex justify-between items-center">
-                <h1 class="text-4xl font-semibold">Fashion<span class="text-red-500">Hat</span></h1>
+                <h1 class="text-4xl font-semibold text-green-700">Fashion<span class="text-red-500">Hat</span></h1>
+                <div class="flex gap-4 text-lg font-semibold text-green-700">
+                    <a href="index.html"> Home</a>
+                    <a onclick="checkoutPage(1)" href="product-checkout.html">Checkout</a>
+                </div>
                 <div class="flex justify-between items-center gap-5">
                     <input class="px-3 py-2 w-[300px] outline-none rounded-lg placeholder:text-center text-lg"
                         type="text" id="search-inp" placeholder="Search Your Product">
@@ -23,7 +27,7 @@
                         <i id="shoping-icon" class="fa-solid fa-bag-shopping text-4xl text-green-700"></i>
                         <span id="card-number" class="absolute bg-red-200 px-1 rounded-full">0</span>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -56,13 +60,13 @@
         </div>
     </header>
     <main class="container mx-auto my-[80px] relative">
-        <section class="grid grid-cols-4 gap-3"> 
+        <section class="grid grid-cols-4 gap-3">
             <div class="col-span-1 h-screen bg-gray-200 custom-class static">
 
             </div>
             <div class="col-span-3 ">
                 <div class=" flex justify-around text-center flex-wrap gap-3" id="product-cart-container">
-                    
+
                 </div>
             </div>
         </section>
@@ -70,8 +74,10 @@
     <footer class="w-full h-[20vh] bg-black">
 
     </footer>
+    <script src="./js/fetch.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/index.js"></script>
+
 </body>
 
 </html>
