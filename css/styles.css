@@ -9,7 +9,7 @@
     overflow: hidden;
 }
 .custom-banner{
-    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('/images/banner.jpg');
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('/./images/banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
     
