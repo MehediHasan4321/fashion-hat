@@ -1,6 +1,8 @@
 //Global Variable...
 let count = 0
 let isOpen = true
+const body =  document.body
+let lastScroll = 0;
 let arr = []
 window.onload = () => {
     loadProductData()
@@ -78,10 +80,6 @@ document.getElementById("search-inp").addEventListener("keyup", function (e) {
 
 })
 
-document.addEventListener("scroll", () => {
-    const navBar = document.getElementById("nav-bar")
-    navBar.style.position = 'fixed'
-})
 
 
 function checkoutPage(id) {
@@ -89,3 +87,20 @@ function checkoutPage(id) {
         .then(res => res.json())
         .then(data => console.log(data))
 }
+
+window.addEventListener("scroll",()=>{
+    const currentScroll = window.pageYOffset;
+    if(currentScroll <= 0){
+        body.classList.remove('scroll-up')
+    }
+    if(currentScroll > lastScroll && !body.classList.contains("scroll-down")){
+        body.classList.remove('scroll-up')
+        body.classList.add('scroll-down')
+    }
+    if(currentScroll < lastScroll && body.classList.contains("scroll-down")){
+        body.classList.remove('scroll-down')
+        body.classList.add('scroll-up')
+    }
+
+    lastScroll = currentScroll;
+})

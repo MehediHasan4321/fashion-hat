@@ -12,5 +12,18 @@
     background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('/./images/banner.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 83px;
+}
+#nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all .3s ease-in-out;
+}
+
+.scroll-down #nav-bar{
+    transform: translate3d(0, -100%, 0);
+}
+.scroll-up #nav-bar{
     
 }
